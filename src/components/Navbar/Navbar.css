@@ -1,0 +1,45 @@
+.main-nav {
+  background: #000000;
+  color: rgb(255, 255, 255);
+}
+.main-logo {
+  margin-inline: 40px;
+  margin-top: 10px;
+  font-size: 2rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .main-logo {
+    font-size: 1.5rem;
+    margin-inline: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    font-size: 0.9rem !important;
+    padding: 0.3rem 0.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-nav .nav-link {
+    font-size: 0.8rem !important;
+  }
+
+  .search {
+    margin-right: 10px;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .form-control {
+    font-size: 0.9rem;
+  }
+}

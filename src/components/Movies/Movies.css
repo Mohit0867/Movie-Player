@@ -1,0 +1,38 @@
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+.text-type {
+  color: white;
+  font-family: "Mars Model", sans-serif;
+}
+.loader {
+  width: 25px;margin-left: 20px;
+  aspect-ratio: 1;
+  background: linear-gradient(
+        #ffffff00 calc(1 * 100% / 6),
+        #ffffff 0 calc(3 * 100% / 6),
+        #ffffff00 0
+      )
+      left bottom,
+    linear-gradient(
+        #ffffff00 calc(2 * 100% / 6),
+        #ffffff 0 calc(4 * 100% / 6),
+        #ffffff00 0
+      )
+      center bottom,
+    linear-gradient(
+        #ffffff00 calc(3 * 100% / 6),
+        #ffffff 0 calc(5 * 100% / 6),
+        #ffffff00 0
+      )
+      right bottom;
+  background-size: 20% 600%;
+  background-repeat: no-repeat;
+  animation: load 1s infinite linear;
+}
+@keyframes load {
+  100% {
+    background-position: left top, center top, right top;
+  }
+}

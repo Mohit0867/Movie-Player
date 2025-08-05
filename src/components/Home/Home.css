@@ -1,0 +1,39 @@
+.sidebar > span:hover {
+  background-color: #e2e2e2;
+  color: #000000;
+}
+.sidebar > span {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+  text-wrap: nowrap;
+  color: white;
+  font-size: 1.1rem;
+  padding: 5px 20px 5px 32px;
+}
+.text-type {
+  color: white;
+  font-family: "Mars Model", sans-serif;
+}
+.sidebar {
+  padding: 20px 10px 20px 10px;
+}
+@media (max-width: 720px) {
+  .sidebar > span {
+    font-size: 0.7rem;
+    padding: 5px 10px 5px 15px;
+  }
+  .sidebar {
+    padding: 20px 0px 20px 0px;
+  }
+}
+@media (max-width: 1024px) {
+  .sidebar > span {
+    font-size: 0.9rem;
+    padding: 5px 15px 5px 15px;
+  }
+  .sidebar {
+    padding: 20px 0px 20px 0px;
+  }
+}
